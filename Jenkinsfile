@@ -75,8 +75,8 @@ pipeline {
             steps {
                 sh """
                     trivy image \
-                        --format cyclonedx \
-                        --output sbom-cyclonedx.json \
+                        --format spdx-json \
+                        --output sbom-spdx.json \
                         ${DOCKER_IMAGE}:${DOCKER_TAG}
                 """
             }
