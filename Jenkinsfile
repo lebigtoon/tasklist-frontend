@@ -18,7 +18,7 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'rm -rf node_modules package-lock.json && npm install --include=optional'
+                sh 'npm ci'
             }
         }
 
