@@ -82,7 +82,7 @@ pipeline {
             }
             post {
                 always {
-                    archiveArtifacts artifacts: 'sbom-cyclonedx.json', allowEmptyArchive: true
+                    archiveArtifacts artifacts: 'sbom-spdx.json', allowEmptyArchive: true
                 }
             }
         }
