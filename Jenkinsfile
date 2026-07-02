@@ -18,7 +18,7 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'npm install'
+                sh 'rm -f package-lock.json && npm install'
             }
         }
 
